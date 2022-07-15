@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      var num = 10;
+      let num2 = 10;
+
+      // 1. 함수 선언문  // function 함수명 (소괄호: 기능) {중괄호 안에는 로직}  
+      function hello() {
+        console.log("Hello JavaScript");
+      }
+      // 함수를 사용 하기 위해서는 함수 호출를 해야한다.
+      hello(); // 함수 호출 == 함수 실행 
+      
+      // 2. 함수 표현식  (함수를 변수에 담는다) 객체이기 때문에 
+      let hello2 = function(){
+        console.log("Hello JavaScript");
+      };
+      
+      hello2(); 
+
+      // 함수를 호출하는데 위치는 상관없지만 함수표현식으로 위치가 변수위치가 다르며 호출되지않음 
+      // 함수 호이스팅 = 함수 위치에 따라 호출할 수 없음
+      
+      // 3. 화살표 함수 다음과같이 정의하겠습니다.
+      let Hello3 = () => {console.log("Hello JavaScript 파이팅!!!");}
+
+      Hello3();
+      
+    </script>
+</body>
+</html>

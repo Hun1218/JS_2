@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      // let array = [1, 2, 3, 4, 5];
+      // 컴퓨터야 내가 알려준 배열안에 있는 요소 중에서
+      // 짝수만 출력시켜줘 ---> 배열안에 있는 요소들은 전부 비교
+      let array = [10, 6, 22, 33, 15, 77, 1000];
+      let array2 = [];
+      let array3 = "";
+      let cnt=0;
+      for(let i=0; i<array.length; i++){
+        // console.log(array[i])
+        if(array[i] % 2 == 0){   // 길이가 인덱스 주소에 해당하는 값이 하기때문에 인덱스으로 출력해야한다.
+          array2.push(array[i]);
+          array3 += array[i] + ",";
+          if(i == array.length-1){
+            array3 += array[i] + "";
+          }else{
+            array3 += array[i]+",";
+          }
+          cnt++
+        }
+      }
+      console.log("num에 저장된 짝수는 "+ array2 + " 이며 총 " + array2.length + "개 입니다." );
+      console.log("짝수는:" + array2+" 갯수: "+ cnt)
+
+
+      // for 문을 사용해서 배열을 전부 출력시키고 싶습니다!!!
+      // for ==> 횟수가 정해져 있는 반복문!!!
+      // for(언제부터; 언제까지; 반복후 작업){
+      //   실행 로직 (반복할 수행 명령문); 
+      // }
+      // for(let i=0; i<array.length; i++){  
+      //     console.log(array[i]);
+      // }
+      // console.log(array);
+
+  </script>
+  
+</body>
+</html>

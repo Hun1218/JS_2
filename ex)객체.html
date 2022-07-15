@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 id="Test1">Test</h1>
+
+  <script>
+      
+      let h1 = document.getElementById("Test1");
+      console.log(h1);
+
+
+
+      // 사람이라는 객체를 만들꺼에요.
+      let person = { 
+          gender : "Man",
+          name : "승환",
+          eat : function(){
+            console.log("밥을 먹는다");
+          }
+      };
+
+      // 성별 출력 배열에서는 인덱스로 값을 출력했다면 객체는 키로 값을 출력함
+      console.log(person.gender);
+      person.eat();
+
+  </script>
+</body>
+</html>
